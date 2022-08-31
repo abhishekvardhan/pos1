@@ -1,0 +1,46 @@
+<div  class="continer">
+    <h1>Input Enterprise Details</h1>
+    <form #login2="ngForm" (ngSubmit)="submit(login2)">
+        <div class="form-group">
+            <label for="gstn">Enter GSTN number</label>
+            <input  required type="text" name="gstn" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="entp"> name of the Enterprise</label>
+            <input  required type="text" name="entp" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="dcbil">Enter the director's CBIL Score</label>
+            <input  required type="text" name="dcbil" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="bmail">Business mail Address</label>
+            <input required type="text" name="bmail" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="eturn">Enterprise turnover as per latest audited balance sheet</label>
+            <input required type="text" name="eturn" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="acttype">Activity type</label>
+            <input required type="text" name="acttype" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="Acttype">Enterprise operational pin code</label>
+            <input required type="text" name="Acttype" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary" type="submit"><a routerLink="/binfo3">Submit</a></button>
+    </form>
+</div>
+

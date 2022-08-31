@@ -1,0 +1,31 @@
+<div  class="continer ">
+    <h1>Apply for New Loan</h1>
+    <form #login="ngForm" (ngSubmit)="submit(login)">
+        <div class="form-group">
+            <label for="ename">Enterprise name</label>
+            <input  required type="text" name="ename" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="name"> name</label>
+            <input  required type="text" name="name" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="pno">Enterprise Phone number</label>
+            <input  required type="text" name="pno" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="pin">Enterprise operational pin code</label>
+            <input required type="text" name="pin" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        
+        <button class="btn btn-primary" type="submit"><a routerLink="/binfo2">Submit</a></button>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div  class="continer">
+    <h1>Upload your Collaterals</h1>
+    <form #login4="ngForm" (ngSubmit)="submit(login4)">
+        <div class="form-group">
+            <label for="coltype">Enter collateral type</label>
+            <input  required type="text" name="coltype" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="value"> Present Market Value</label>
+            <input  required type="text" name="value" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <div class="form-group">
+            <label for="Dshare">Dbs share in it</label>
+            <input  required type="text" name="Dshare" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+     
+       
+
+        
+        <button class="btn btn-primary" type="submit"><a routerLink="/success">Submit</a></button>
+    </form>
+</div>
+

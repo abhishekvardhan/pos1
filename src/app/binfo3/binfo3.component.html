@@ -1,0 +1,60 @@
+<div  class="continer">
+    <h1>Input Loan Requiements</h1>
+    <form #login3="ngForm" (ngSubmit)="submit(login3)">
+        <div class="form-group">
+            <h4><b>Please provide details of all existing loans with any other bank(s)</b></h4>
+            <label for="Wcl">Working Capital Loan</label>
+            <input  required type="text" name="wcl" class="form-control" ngmodel>
+    
+            <label for="Tl"> Term Loan / Loan against Property </label>
+            <input  required type="text" name="Tl" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+<h4>Loan required in dbs</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="wcl1">
+            <label class="form-check-label" for="wcl1">
+              Working Capital Loan
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="tl1" checked>
+            <label class="form-check-label" for="tl1">
+              Term loan
+            </label>
+
+          </div>
+  <div class="form-group">
+            <label for="lamount">Please enter the requied loan amount</label>
+            <input required type="text" name="lamount" class="form-control" ngmodel>
+        </div>
+        <pre></pre>
+
+        <h4><b>Request the products to be availed</b></h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="rb" id="rb1">
+            <label class="form-check-label" for="rb1">
+              Overdraft/Cash credit
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rb" id="rb2" checked>
+            <label class="form-check-label" for="rb2">
+              Letter of Credit
+            </label>
+          </div><div class="form-check">
+            <input class="form-check-input" type="radio" name="rb" id="rb3">
+            <label class="form-check-label" for="rb3">
+              Bank Guarantee
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rb" id="rb4" >
+            <label class="form-check-label" for="rb4">
+              Post shipment Credit
+            </label>
+          </div>
+        
+        <button class="btn btn-primary" type="submit"><a routerLink="/binfo4">Submit</a></button>
+    </form>
+</div>
